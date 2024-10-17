@@ -1,6 +1,7 @@
 # WPS_ERA5
 documentation to use ERA5 data in WPS
 
+DATA: https://cds.climate.copernicus.eu/requests?tab=all
 API: https://cds.climate.copernicus.eu/how-to-api
 
 Video with tutorial: https://www.youtube.com/watch?v=M91ec7EdCic
