@@ -1,6 +1,13 @@
 # WPS_ERA5
 documentation to use ERA5 data in WPS
 
+Video with tutorial: https://www.youtube.com/watch?v=M91ec7EdCic
+Info:
+Access to ERA5 surface data: cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form
+Access to ERA5 pressure level data: cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=form
+Access to CDS API (python module to get ERA5 data): cds.climate.copernicus.eu/api-how-to
+Access to ERA5 download codes to run the WRF model: github.com/anikfal/atmospheric_science/tree/main
+
 This is some notes from internet (will remove):
 ERA5 data on single level (ERA5 atmospheric surface analysis [GRIB1])
 https://rda.ucar.edu/datasets/ds633.0/index.html#sfol-wl-/data/ds633.0?g=9
