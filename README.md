@@ -85,7 +85,7 @@ link the inputs for *surface level* using link_grib.csh
 change &ungrib session of the namelist.wps to produce SFC files
 
 ```
-\&ungrib
+&ungrib
  out_format = 'WPS',
  prefix = 'SFC',
 /
