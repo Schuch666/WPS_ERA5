@@ -114,6 +114,8 @@ run metgrid.exe:
 
 Additional information:
 
+Miniconda download and documentaion: https://docs.anaconda.com/miniconda
+
 WRF documentaion page: https://www2.mmm.ucar.edu/wrf/users/docs/user_guide_v4/contents.html
 
 ERA5 download page: https://cds.climate.copernicus.eu/requests?tab=all
@@ -121,6 +123,3 @@ ERA5 download page: https://cds.climate.copernicus.eu/requests?tab=all
 ERA5 download API page: https://cds.climate.copernicus.eu/how-to-api
 
 Video tutorial: https://www.youtube.com/watch?v=M91ec7EdCic
-
-Miniconda download and documentaion: https://docs.anaconda.com/miniconda
-
