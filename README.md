@@ -114,6 +114,8 @@ run metgrid.exe:
 
 Additional information:
 
+WRF documentaion page: https://www2.mmm.ucar.edu/wrf/users/docs/user_guide_v4/v4.4/contents.html
+
 ERA5 download page: https://cds.climate.copernicus.eu/requests?tab=all
 
 ERA5 download API page: https://cds.climate.copernicus.eu/how-to-api
