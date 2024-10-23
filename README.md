@@ -17,7 +17,7 @@ Documentation to use ERA5 data in WPS
 
 change &ungrib session of the namelist.wps to produce PL files
 
-`&ungrib
+`r &ungrib
  out_format = 'WPS',
  prefix = 'PL',
 /`
@@ -43,7 +43,7 @@ run ungrib.exe
 
 ### d. run ungrib.exe to combine `PL` and `SFC` in `met_em` files
 
-`&metgrid
+`r &metgrid
  fg_name = 'SFC', 'PL'
  io_form_metgrid = 2,
 /`
