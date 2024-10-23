@@ -27,8 +27,9 @@ pip install 'cdsapi>=0.7.2'
 
 Register/login in [cdc site](https://cds.climate.copernicus.eu/how-to-api) and copy and paste the `url:xxx and key:yyy` in a configuration file.
 
-`nano $HOME/.cdsapirc`
-
+```
+nano $HOME/.cdsapirc
+```
 ### d. Download *pressure level* ERA5
 
 Change the `era5_level.py` python script
@@ -51,18 +52,18 @@ python
 
 Create a namelist with the simulation information and run geogrid.exe (no modifications are needed)
 
-`cd geogrid; ln -sf GEOGRID.TBL.ARW_CHEM GEOGRID.TBL; cd ..`
-
-`./ungrib.exe`
-
+```
+cd geogrid; ln -sf GEOGRID.TBL.ARW_CHEM GEOGRID.TBL; cd ..
+./ungrib.exe
+```
 ### b. UNGRIB for *pressure level* 
 
 link the variable table for *pressure level* (or change to *Vtable.ERA-interim.ml* if using *model level*) and *pressure level* inputs using link_grib.csh
 
-`ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.pl Vtable`
-
-`./link_grib.csh /scratch/${USER}/DATA/ERA5/level.grib .`
-
+```
+ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.pl Vtable
+./link_grib.csh /scratch/${USER}/DATA/ERA5/level.grib .
+```
 change &ungrib session of the namelist.wps to produce PL files
 
 ```
@@ -93,7 +94,9 @@ change &ungrib session of the namelist.wps to produce SFC files
 
 run ungrib.exe:
 
-`./ungrib.exe`
+```
+./ungrib.exe
+```
 
 ### d. METGRID for *pressure level* and *surface level*
 
@@ -108,8 +111,9 @@ run metgrid.exe to combine `PL` and `SFC` and creatre `met_em` files to run `rea
 
 run metgrid.exe:
 
-`./metgrid.exe`
-
+```
+./metgrid.exe
+```
 ----------------------------
 
 Additional information:
