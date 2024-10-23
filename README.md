@@ -17,7 +17,7 @@ To initiallize conda
 ```
 conda init --all
 ```
-### b. Create a python environment called py311 and install the python cdsapi package:
+### b. Create a python environment and install cdsapi package:
 ```
 conda create -n py311 python=3.11
 conda activate py311
