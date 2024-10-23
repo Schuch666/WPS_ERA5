@@ -2,7 +2,7 @@
 Documentation to use ERA5 data in WPS
 
 ## 1. Download inputs using Python:
-### a. Download and install [miniconda](https://docs.anaconda.com/miniconda/)
+### a. Download and install [miniconda](https://docs.anaconda.com/miniconda)
 ```
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
@@ -116,6 +116,9 @@ Additional information:
 
 ERA5 download page: https://cds.climate.copernicus.eu/requests?tab=all
 
-ERA5 download API: https://cds.climate.copernicus.eu/how-to-api
+ERA5 download API page: https://cds.climate.copernicus.eu/how-to-api
 
 Video tutorial: https://www.youtube.com/watch?v=M91ec7EdCic
+
+Miniconda download and documentaion: https://docs.anaconda.com/miniconda
+
