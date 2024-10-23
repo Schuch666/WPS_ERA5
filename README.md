@@ -13,6 +13,10 @@ Documentation to use ERA5 data in WPS
 
 ### b. link the inputs for *pressure level* using link_grib.csh
 
+link the table for *pressure level* (or change to *model level*)
+
+`ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.pl Vtable`
+
 `./link_grib.csh /scratch/${USER}/DATA/ERA5/level.grib .`
 
 change &ungrib session of the namelist.wps to produce PL files
