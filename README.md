@@ -1,10 +1,10 @@
 # WPS_ERA5
-documentation to use ERA5 data in WPS
+Documentation to use ERA5 data in WPS
 
-DATA: https://cds.climate.copernicus.eu/requests?tab=all
-API: https://cds.climate.copernicus.eu/how-to-api
+1. download ERA5 using Python:
+   
+3. processing using WPS
 
-Video with tutorial: https://www.youtube.com/watch?v=M91ec7EdCic
 Info:
 Access to ERA5 surface data: cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form
 Access to ERA5 pressure level data: cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=form
@@ -50,3 +50,10 @@ Then do ./geogrid.exe and ./metgrid.exe using the namelist.wps I am sharing as t
 
 /
 
+Additional information:
+
+ERA5 download page: https://cds.climate.copernicus.eu/requests?tab=all
+
+ERA5 download API: https://cds.climate.copernicus.eu/how-to-api
+
+Video tutorial: https://www.youtube.com/watch?v=M91ec7EdCic
