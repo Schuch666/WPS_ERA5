@@ -2,7 +2,29 @@
 Documentation to use ERA5 data in WPS
 
 ## 1. Download inputs using Python:
-   
+a. download and install [miniconda](https://docs.anaconda.com/miniconda/) or other python vesion.
+```
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+```
+after install
+```
+source ~/miniconda3/bin/activate
+```
+to initiallize
+```
+conda init --all
+```
+b. create a python environment:
+```
+conda create -n py311 python=3.11
+conda activate py311
+pip install 'cdsapi>=0.7.2'
+```
+c. Register/login in [cdc site](https://cds.climate.copernicus.eu/how-to-api) and copy and paste the url:xxx and key:yyy in a configuration $HOME/.cdsapirc file.
+
 ## 2. Process using WPS:
 
 ### a. GEOGRID
