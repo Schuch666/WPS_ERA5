@@ -75,13 +75,17 @@ change &ungrib session of the namelist.wps to produce PL files
 
 run ungrib.exe:
 
-`./ungrib.exe`
+```
+./ungrib.exe
+```
 
 ### c. UNGRIB for *surface level*
 
 link the inputs for *surface level* using link_grib.csh
 
+```
 `./link_grib.csh /scratch/${USER}/DATA/ERA5/single.grib .`
+```
 
 change &ungrib session of the namelist.wps to produce SFC files
 
