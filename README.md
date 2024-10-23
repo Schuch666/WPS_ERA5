@@ -35,7 +35,7 @@ nano $HOME/.cdsapirc
 Change the `era5_level.py` python script
 ```
 conda activate py311
-python 
+python era5_level.py
 ```
 
 ### e. Download *surface level* ERA5
@@ -43,7 +43,7 @@ python
 Change the `era5_surface.py` python script
 ```
 conda activate py311
-python 
+python era5_surface.py
 ```
 
 ## 2. Process using WPS:
