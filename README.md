@@ -5,15 +5,17 @@ Documentation to use ERA5 data in WPS
    
 ## 2. Process using WPS:
 
-### a. Create a namelist with the simulation information and run geogrid.exe (no modifications are needed)
+### a. GEOGRID
+
+Create a namelist with the simulation information and run geogrid.exe (no modifications are needed)
 
 `cd geogrid; ln -sf GEOGRID.TBL.ARW_CHEM GEOGRID.TBL; cd ..`
 
 `./ungrib.exe`
 
-### b. link the inputs for *pressure level* using link_grib.csh
+### b. UNGRIB for PRESSURE LEVEL 
 
-link the table for *pressure level* (or change to *model level*)
+link the variable table for *pressure level* (or change to *model level*) and *pressure level* inputs using link_grib.csh
 
 `ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.pl Vtable`
 
@@ -28,11 +30,13 @@ change &ungrib session of the namelist.wps to produce PL files
 /
 ```
 
-run ungrib.exe
+run ungrib.exe:
 
 `./ungrib.exe`
 
-### c. link the inputs for *surface level* using link_grib.csh
+### c. UNGRIB for SURFACE LEVEL
+
+link the inputs for *surface level* using link_grib.csh
 
 `./link_grib.csh /scratch/${USER}/DATA/ERA5/single.grib .`
 
@@ -45,11 +49,13 @@ change &ungrib session of the namelist.wps to produce SFC files
 /
 ```
 
-run ungrib.exe
+run ungrib.exe:
 
 `./ungrib.exe`
 
-### d. run ungrib.exe to combine `PL` and `SFC` in `met_em` files
+### d. METGRID
+
+run metgrid.exe to combine `PL` and `SFC` in `met_em` files
 
 ```
 &metgrid
@@ -58,7 +64,7 @@ run ungrib.exe
 /
 ```
 
-run metgrid.exe
+run metgrid.exe:
 
 `./metgrid.exe`
 
