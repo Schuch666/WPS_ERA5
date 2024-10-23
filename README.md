@@ -1,9 +1,58 @@
 # WPS_ERA5
 Documentation to use ERA5 data in WPS
 
-1. download ERA5 using Python:
+## 1. Download inputs using Python:
    
-3. processing using WPS
+## 2. Process using WPS:
+
+### a. Create a namelist with the simulation information and run geogrid.exe (no modifications are needed)
+
+`cd geogrid; ln -sf GEOGRID.TBL.ARW_CHEM GEOGRID.TBL; cd ..`
+
+`./ungrib.exe`
+
+### b. link the inputs for *pressure level* using link_grib.csh
+
+`./link_grib.csh /scratch/${USER}/DATA/ERA5/level.grib .`
+
+change &ungrib session of the namelist.wps to produce PL files
+
+`&ungrib
+ out_format = 'WPS',
+ prefix = 'PL',
+/`
+
+run ungrib.exe
+
+`./ungrib.exe`
+
+### c. link the inputs for *surface level* using link_grib.csh
+
+`./link_grib.csh /scratch/${USER}/DATA/ERA5/single.grib .`
+
+change &ungrib session of the namelist.wps to produce SFC files
+
+`&ungrib
+ out_format = 'WPS',
+ prefix = 'SFC',
+/`
+
+run ungrib.exe
+
+`./ungrib.exe`
+
+### d. run ungrib.exe to combine `PL` and `SFC` in `met_em` files
+
+`&metgrid
+ fg_name = 'SFC', 'PL'
+ io_form_metgrid = 2,
+/`
+
+run metgrid.exe
+
+`./metgrid.exe`
+
+----------------------------
 
 Info:
 Access to ERA5 surface data: cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form
@@ -33,10 +82,6 @@ this will prepare the files with name of SFC
 
 second in WPS in namelist.wps
 
-&ungrib
- out_format = 'WPS',
- prefix = 'PL',
-/
 
 and link only the *PRESSURE.grib files and do ./ungrib.exe
 this will prepare the files with name of PL
@@ -49,6 +94,8 @@ Then do ./geogrid.exe and ./metgrid.exe using the namelist.wps I am sharing as t
  opt_output_from_metgrid_path = '/home/cas/phd/asz198067/scratch/FDDA_TEST/',
 
 /
+
+----------------------
 
 Additional information:
 
