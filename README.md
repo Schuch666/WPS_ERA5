@@ -55,7 +55,7 @@ Create a namelist with the simulation information and run geogrid.exe (no modifi
 
 `./ungrib.exe`
 
-### b. UNGRIB for PRESSURE LEVEL 
+### b. UNGRIB for *pressure level* 
 
 link the variable table for *pressure level* (or change to *model level*) and *pressure level* inputs using link_grib.csh
 
@@ -76,7 +76,7 @@ run ungrib.exe:
 
 `./ungrib.exe`
 
-### c. UNGRIB for SURFACE LEVEL
+### c. UNGRIB for *surface level*
 
 link the inputs for *surface level* using link_grib.csh
 
@@ -95,7 +95,7 @@ run ungrib.exe:
 
 `./ungrib.exe`
 
-### d. METGRID
+### d. METGRID for *pressure level* and *surface level*
 
 run metgrid.exe to combine `PL` and `SFC` in `met_em` files
 
