@@ -2,7 +2,7 @@
 Documentation to use ERA5 data in WPS
 
 ## 1. Download inputs using Python:
-### a. Download and install [miniconda](https://docs.anaconda.com/miniconda/) or other python vesion.
+### a. Download and install [miniconda](https://docs.anaconda.com/miniconda/)
 ```
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
