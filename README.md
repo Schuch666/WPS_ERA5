@@ -57,7 +57,7 @@ Create a namelist with the simulation information and run geogrid.exe (no modifi
 
 ### b. UNGRIB for *pressure level* 
 
-link the variable table for *pressure level* (or change to Vtable.ERA-interim.pl if using *model level*) and *pressure level* inputs using link_grib.csh
+link the variable table for *pressure level* (or change to Vtable.ERA-interim.ml if using *model level*) and *pressure level* inputs using link_grib.csh
 
 `ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.pl Vtable`
 
