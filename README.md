@@ -23,7 +23,11 @@ conda create -n py311 python=3.11
 conda activate py311
 pip install 'cdsapi>=0.7.2'
 ```
-### c. Register/login in [cdc site](https://cds.climate.copernicus.eu/how-to-api) and copy and paste the url:xxx and key:yyy in a configuration $HOME/.cdsapirc file.
+### c. Copy the credentials
+
+Register/login in [cdc site](https://cds.climate.copernicus.eu/how-to-api) and copy and paste the `url:xxx and key:yyy` in a configuration file.
+
+`nano $HOME/.cdsapirc`
 
 ### d. Download *pressure level* ERA5
 
@@ -107,14 +111,6 @@ run metgrid.exe:
 `./metgrid.exe`
 
 ----------------------------
-
-Info:
-Access to ERA5 surface data: cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form
-Access to ERA5 pressure level data: cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=form
-Access to CDS API (python module to get ERA5 data): cds.climate.copernicus.eu/api-how-to
-Access to ERA5 download codes to run the WRF model: github.com/anikfal/atmospheric_science/tree/main
-
-----------------------
 
 Additional information:
 
