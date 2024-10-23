@@ -2,28 +2,44 @@
 Documentation to use ERA5 data in WPS
 
 ## 1. Download inputs using Python:
-a. download and install [miniconda](https://docs.anaconda.com/miniconda/) or other python vesion.
+a. Download and install [miniconda](https://docs.anaconda.com/miniconda/) or other python vesion.
 ```
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
-after install
+After the conda installation
 ```
 source ~/miniconda3/bin/activate
 ```
-to initiallize
+To initiallize conda
 ```
 conda init --all
 ```
-b. create a python environment:
+b. Create a python environment called py311 using conda:
 ```
 conda create -n py311 python=3.11
 conda activate py311
 pip install 'cdsapi>=0.7.2'
 ```
 c. Register/login in [cdc site](https://cds.climate.copernicus.eu/how-to-api) and copy and paste the url:xxx and key:yyy in a configuration $HOME/.cdsapirc file.
+
+d. Download *pressure level* ERA5
+
+Change the `era5_level.py` python script
+```
+conda activate py311
+python 
+```
+
+e. Download *surface level* ERA5
+
+Change the `era5_surface.py` python script
+```
+conda activate py311
+python 
+```
 
 ## 2. Process using WPS:
 
