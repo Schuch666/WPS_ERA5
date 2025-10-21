@@ -23,7 +23,7 @@ conda create -n py311 python=3.11
 conda activate py311
 pip install 'cdsapi>=0.7.2'
 ```
-NOTE: use `conda create -n py311 python=3.11 --override-channels -c conda-forge -c defaults` if there is a system locked condifuration
+NOTE: use `conda create -n py311 python=3.11 --override-channels -c conda-forge -c defaults` if there is a system locked channel
 
 ### c. Copy the credentials
 
