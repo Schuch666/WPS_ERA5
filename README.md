@@ -108,7 +108,7 @@ run ungrib.exe:
 ./ungrib.exe
 ```
 
-### d. METGRID for *pressure level* and *surface level*
+### d. METGRID for *altitude* and *surface*
 
 run metgrid.exe to combine `PL` and `SFC` and creatre `met_em` files to run `real.exe` and `wrf.exe`
 
