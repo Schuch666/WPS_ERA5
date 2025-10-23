@@ -110,7 +110,7 @@ run ungrib.exe:
 
 ### d. METGRID for *altitude* and *surface*
 
-run metgrid.exe to combine `PL` and `SFC` and creatre `met_em` files to run `real.exe` and `wrf.exe`
+run metgrid.exe to combine `PL` and `SFC` and interpolate horizontally to creatre `met_em` files to run `real.exe` and `wrf.exe`
 
 ```
 &metgrid
