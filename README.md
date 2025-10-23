@@ -110,7 +110,7 @@ run ungrib.exe:
 
 ### d. METGRID for *levels* and *surface*
 
-run metgrid.exe to combine `PL` and `SFC` and interpolate horizontally to creatre `met_em` files to run `real.exe` and `wrf.exe`
+run metgrid.exe to combine `PL` and `SFC` and interpolate horizontally to creatre `met_em` files to run `real.exe` and `wrf.exe`. Change &metgrid session of the namelist.wps to produce met_em files
 
 ```
 &metgrid
