@@ -86,7 +86,7 @@ run ungrib.exe:
 link the inputs for *surface level* using link_grib.csh
 
 ```
-`./link_grib.csh /scratch/${USER}/DATA/ERA5/single.grib .`
+./link_grib.csh /scratch/${USER}/DATA/ERA5/single.grib .
 ```
 
 change &ungrib session of the namelist.wps to produce SFC files
