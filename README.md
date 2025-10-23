@@ -86,6 +86,8 @@ run ungrib.exe:
 link the inputs for *surface level* using link_grib.csh
 
 ```
+ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.ml Vtable
+rm GRIBFILE.A*
 ./link_grib.csh /scratch/${USER}/DATA/ERA5/single.grib .
 ```
 
