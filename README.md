@@ -64,6 +64,7 @@ link the variable table for *pressure level* (or change to *Vtable.ERA-interim.m
 
 ```
 ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.pl Vtable
+rm GRIBFILE.A*
 ./link_grib.csh /scratch/${USER}/DATA/ERA5/level.grib .
 ```
 change &ungrib session of the namelist.wps to produce PL files
