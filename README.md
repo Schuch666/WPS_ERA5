@@ -32,7 +32,7 @@ Register/login in [cdc site](https://cds.climate.copernicus.eu/how-to-api) and c
 ```
 nano $HOME/.cdsapirc
 ```
-### d. Download *altitude* ERA5
+### d. Download *levels* ERA5
 
 Change the `era5_level.py` python script
 ```
@@ -58,7 +58,7 @@ Create a namelist with the simulation information and run geogrid.exe (no modifi
 cd geogrid; ln -sf GEOGRID.TBL.ARW_CHEM GEOGRID.TBL; cd ..
 ./ungrib.exe
 ```
-### b. UNGRIB for *altitude* 
+### b. UNGRIB for *levels* ERA5
 
 link the variable table for *pressure level* (or change to *Vtable.ERA-interim.ml* if using *model level*) and *pressure level* inputs using link_grib.csh
 
@@ -108,7 +108,7 @@ run ungrib.exe:
 ./ungrib.exe
 ```
 
-### d. METGRID for *altitude* and *surface*
+### d. METGRID for *levels* and *surface*
 
 run metgrid.exe to combine `PL` and `SFC` and interpolate horizontally to creatre `met_em` files to run `real.exe` and `wrf.exe`
 
