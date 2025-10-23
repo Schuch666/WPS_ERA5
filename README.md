@@ -84,7 +84,7 @@ run ungrib.exe:
 ./ungrib.exe
 ```
 
-### c. UNGRIB for *surface*
+### c. UNGRIB for *surface* ERA5
 
 link the inputs for *surface level* using link_grib.csh
 
