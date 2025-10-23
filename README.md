@@ -67,7 +67,7 @@ ln -sf ungrib/Variable_Tables/Vtable.ERA-interim.pl Vtable
 rm GRIBFILE.A*
 ./link_grib.csh /scratch/${USER}/DATA/ERA5/level.grib .
 ```
-**NOTE:** Vtable.ERA-interim.ml is used only if the ERA5 data is downloaded as model level (instead of pressure levels), it don't need to change.
+**NOTE:** Vtable.ERA-interim.ml is used only if the ERA5 data is downloaded as model level (instead of pressure levels), **it don't need to change**.
 
 change &ungrib session of the namelist.wps to produce PL files
 
